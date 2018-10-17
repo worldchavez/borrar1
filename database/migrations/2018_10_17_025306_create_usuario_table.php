@@ -22,10 +22,10 @@ class CreateUsuarioTable extends Migration
             $table->text('correo')->default(null);
             $table->text('contrasenia')->default(null);
             $table->text('fechanacimiento')->default(null);
-            $table->integer('sueldo')->default(null);
-            $table->integer('bonificaciondeley')->(null);
-            $table->integer('porcentajedecomision')->(null);
-            $table->text('estado')->default(null);
+            $table->text('sueldo')->default(null);
+            $table->text('bonificaciondeley')->default(null);
+            $table->text('porcentajedecomision')->default(null);
+            $table->tinyInteger('estado')->default(null);
             $table->timestamps();
         });
     }

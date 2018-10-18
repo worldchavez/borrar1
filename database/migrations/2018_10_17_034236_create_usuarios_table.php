@@ -15,7 +15,7 @@ class CreateUsuariosTable extends Migration
     {
 
         Schema::create('usuarios', function (Blueprint $table) {
-            $table->increments('idUsuario');
+            $table->increments('codigousuario');
             $table->text('nombre')->default(null);
             $table->text('dpi')->default(null);
             $table->text('direccion')->default(null);

@@ -14,9 +14,9 @@ class CreateAsignaciondepermisosTable extends Migration
     public function up()
     {
         Schema::create('asignaciondepermisos', function (Blueprint $table) {
-            $table->increments('idAsignaciondePermisos');
-            $table->boolean('codigosucursal')->default(null);
-            $table->boolean('codigousuario')->default(null);
+            $table->increments('codigoasignaciondepermisos');
+            $table->integer('codigosucursal')->default(null);
+            $table->integer('codigousuario')->default(null);
             $table->boolean('caja')->default(null);
             $table->boolean('pos')->default(null);
             $table->boolean('cxc')->default(null);

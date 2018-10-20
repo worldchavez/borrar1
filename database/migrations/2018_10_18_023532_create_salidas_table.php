@@ -16,7 +16,6 @@ class CreateSalidasTable extends Migration
         Schema::create('salidas', function (Blueprint $table) {
             $table->increments('codigosalida');
             $table->timestamp('fecha')->default(null);
-            $table->integer('codigomovimiento')->default(null);
             $table->text('descripcion')->default(null);
             $table->integer('codigosucursal')->default(null);
             $table->integer('codigoasignacionpermisos')->default(null);
